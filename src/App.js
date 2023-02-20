@@ -3,8 +3,7 @@ import "./App.css";
 import MainSearch from "./components/MainSearch";
 import CompanySearchResults from "./components/CompanySearchResults";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-/* import { FavouriteList } from "./components/FavouriteList"; */
-import FavIndicator from "./components/FavouriteList";
+import FavouriteList from "./components/FavouriteList";
 
 function App() {
   /*   const mainUrl = `https://api.openweathermap.org/data/2.5/weather?lat=41.07&lon=16.52&appid=affeeeefd8a69ba026cefacfe17d898f`;
@@ -12,10 +11,9 @@ function App() {
 
   return (
     <BrowserRouter>
-      <FavIndicator></FavIndicator>
       <Routes>
         <Route path="/" element={<MainSearch />} />
-        {/* <Route path="/favourite" element={<FavouriteList />} /> */}
+        <Route path="/favourites" element={<FavouriteList />} />
         <Route path="/:companyName" element={<CompanySearchResults />} />
       </Routes>
     </BrowserRouter>

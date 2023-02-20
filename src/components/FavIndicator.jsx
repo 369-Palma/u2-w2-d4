@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+/* import { useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import { useSelector } from "react-redux";
 
@@ -16,3 +16,4 @@ const FavIndicator = () => {
 };
 
 export default FavIndicator;
+ */
